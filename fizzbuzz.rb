@@ -3,12 +3,16 @@
 
 def fizzbuzz(num)
   fizz_or_buzz = ""
-  if (num/3 == 0) && (num/5 == 0)
-    fizz_or_buzz = "FizzBuzz"
-    
+  
   if num/3 == 0
-    fizz_or_buzz = "Fizz"
-  elsif num/5 == 0
-    fizz_or_buzz = "Buzz"
+    fizz_or_buzz += "Fizz"
   end
+  
+  if num/5 == 0
+    fizz_or_buzz += "Buzz"
+  else
+    fizz_or_buzz = nil
+  end
+  
+  fizz_or_buzz
 end
