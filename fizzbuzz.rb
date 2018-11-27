@@ -6,8 +6,6 @@ def fizzbuzz(num)
   
   if num/3 == 0
     fizz_or_buzz += "Fizz"
-  end
-  
   if num/5 == 0
     fizz_or_buzz += "Buzz"
   else
